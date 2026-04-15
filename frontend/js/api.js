@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api"
+const API_URL = "https://resume-analyzing-tool.onrender.com/api"
 
 async function registerUser(data) {
   const res = await fetch(`${API_URL}/auth/register`, {
