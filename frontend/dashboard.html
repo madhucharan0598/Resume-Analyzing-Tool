@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume Analysis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">AI Resume Analyzer</h1>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <section class="dashboard">
+    <h2>Resume Analysis Result</h2>
+    <div class="card">
+      <h3>Resume Score</h3>
+      <div class="score-container">
+        <div class="circle">
+          <svg width="160" height="160">
+            <circle class="bg-circle" cx="80" cy="80" r="70" stroke-width="10" />
+            <circle class="progress-circle" cx="80" cy="80" r="70" stroke-width="10" />
+          </svg>
+          <div class="score-text" id="scoreText">
+            0%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Detected Skills</h3>
+      <div class="skills-container" id="skills"></div>
+    </div>
+    <div class="card">
+      <h3>Suggested Job Roles</h3>
+      <ul id="jobs"></ul>
+    </div>
+    <div class="card">
+      <h3>Suggested Companies</h3>
+      <ul id="companies"></ul>
+    </div>
+    <div class="card">
+      <h3>AI Suggestions</h3>
+      <ul id="tips"></ul>
+    </div>
+    <div class="card">
+      <h3>Resume History</h3>
+      <ul id="resumeList"></ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>© 2026 AI Resume Analyzer</p>
+  </footer>
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

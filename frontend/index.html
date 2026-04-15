@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="neon-grid"></div>
+  <header class="navbar">
+    <h1 class="logo">AI Resume Analyzer</h1>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload Resume</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html" id="authLink">Login</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Analyze Your Resume With AI</h2>
+    <p>
+      Upload your resume and get AI-powered insights,
+      job suggestions, and resume improvement tips.
+    </p>
+    <a href="upload.html" class="btn">
+      Upload Resume
+    </a>
+  </section>
+  <footer class="footer">
+    <p>© 2026 AI Resume Analyzer</p>
+  </footer>
+  <script src="js/api.js"></script>
+  <script>
+    const token = localStorage.getItem("token")
+    const authLink = document.getElementById("authLink")
+    if (token) {
+      authLink.innerText = "Logout"
+      authLink.href = "#"
+      authLink.onclick = function () {
+        localStorage.removeItem("token")
+        window.location.href = "login.html"
+      }
+    }
+  </script>
+</body>
+</html>

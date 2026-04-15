@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="neon-grid"></div>
+  <header class="navbar">
+    <h1 class="logo">AI Resume Analyzer</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+  <section class="profile-container">
+    <h2>User Profile</h2>
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar" id="avatar">M</div>
+        <div class="user-info">
+          <h3 id="userName">Loading...</h3>
+          <p id="userEmail">Loading...</p>
+        </div>
+      </div>
+      <div class="profile-stats">
+        <div class="stat-box">
+          <h4>Resumes Analyzed</h4>
+          <p id="totalResumes">0</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>Average Score</h4>
+          <p id="avgScore">0%</p>
+        </div>
+
+        <div class="stat-box">
+          <h4>Skills Detected</h4>
+          <p id="totalSkills">0</p>
+        </div>
+      </div>
+      <div class="profile-actions">
+        <a href="edit-profile.html"><button class="profile-btn">Edit Profile</button></a>
+        <a href="login.html"><button class="profile-btn secondary">Logout</button></a>
+      </div>
+    </div>
+  </section>
+  <script src="js/api.js"></script>
+  <script src="js/profile.js"></script>
+  <footer class="footer">
+    <p>© 2026 AI Resume Analyzer</p>
+  </footer>
+</body>
+
+
+</html>
