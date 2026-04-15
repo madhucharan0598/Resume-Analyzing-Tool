@@ -6,7 +6,7 @@ async function loginUser() {
     localStorage.setItem("token", res.token)
     alert("Login successful")
     try{
-      const resumeRes = await fetch("http://localhost:5000/api/resume", {
+      const resumeRes = await fetch("https://resume-analyzing-tool.onrender.com/api/resume", {
         headers: {
           Authorization: "Bearer " + res.token
         }
